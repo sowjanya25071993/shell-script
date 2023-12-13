@@ -1,4 +1,7 @@
 #!/bin/bash
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
 TIMESTAMP=$(date +%F-%H-%M-%s)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 echo "script name::$0"
