@@ -1,4 +1,6 @@
 #!/bin/bash
+TIMESTAMP=$(date +%F-%H-%M-%s)
+LOGFILE="/tmp/$0-$TIMESTAMP.log"
 echo "script name::$0"
 ID=$(id -u)
 VALIDATE(){
@@ -15,7 +17,7 @@ echo "error::pls run this script using root access"
 else
 echo "u r root user"
 fi
-yum install mysql -y
+yum install mysql -y &>> $LOGFILE
 VALIDATE $? "installing mysql"
-yum install git -y
+yum install git -y &>> $LOGFILE
 VALIDATE $? "installing git"
