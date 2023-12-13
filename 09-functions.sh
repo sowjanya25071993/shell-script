@@ -9,14 +9,14 @@ ID=$(id -u)
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
-    echo "error::$2....failed"
+    echo "error::$2....$R failed $N"
     else
-    echo "$2............success"
+    echo "$2............$G success $N"
     fi
 }
 if [ $ID -ne 0 ]
 then
-echo "error::pls run this script using root access"
+echo "$R error::pls run this script using root access $N"
 else
 echo "u r root user"
 fi
