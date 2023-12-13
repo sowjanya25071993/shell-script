@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "script name::$0"
 ID=$(id -u)
 VALIDATE(){
     if [ $1 -ne 0 ]
