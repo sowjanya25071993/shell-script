@@ -9,9 +9,9 @@ ID=$(id -u)
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
-    echo "error::$2....$R failed $N"
+    echo "error::$2.... $R failed $N"
     else
-    echo "$2............$G success $N"
+    echo "$2............ $G success $N"
     fi
 }
 if [ $ID -ne 0 ]
