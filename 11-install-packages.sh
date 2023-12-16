@@ -30,7 +30,7 @@ then
 yum  install $PACKAGE -y &>> $LOGFILE
 VALIDATE $? "installing $PACKAGE"
 else
-echo  -e " $PACKAGE is already installed.....$Y....skipping.....$N"
+echo  -e "$PACKAGE is already installed.....$Y....skipping.....$N"
 fi
 done
 
