@@ -9,7 +9,7 @@ then
 echo -e " $R source directory.....$SOURCE_DIR doesn't exists...$N"
 fi
 FILES-TO_DELETE=$(find $SOURCE_DIR -type f -mtime +14 -name "*.log")
-while IFS=read -r line
+while IFS= read -r line
 do
 echo "$line"
 
