@@ -1,5 +1,5 @@
 #!/bin/bash
-$FILE=/etc/passwd
+FILE=/etc/passwd
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
